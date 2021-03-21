@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biglietto treno</title>
+    <title>Train to Discovery</title>
     <!-- GOOGLE FONT -->
 
     <!-- STYLE -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <main>
-        <h1>Biglietti treni</h1>
-        <div id="price"></div>
-    </main>
+    <div class="container">
+        <main>
+            <div class="w-50 flex-row-align-y-center flex-row-align-x-center">
+                <div class="price-calculator bg-main-color">
+                    <h2 class="main-color">Scopri il prezzo!</h2>
+                    <div>
+                        <label for="km-percorsi">Quanti km?</label>
+                        <input type="text" id="km-percorsi" placeholder="km">
+                    </div>
+                    <div>
+                        <label for="age">Quanti anni hai?</label>
+                        <input type="text" id="age">
+                    </div>
+                    <div id="price"></div>
+                    <button class="btn" onclick="calculatePrice()">Calcola prezzo</button>
+                </div>
+            </div>
+            <div class="w-50 text-right">
+                <h1 class="main-color">Scopri nuovi orizzonti con Train Discovery</h1>
+                <p>Tu decidi quanti km vuoi percorrere e noi ti porteremo alla scoperta di nuovi paesaggi e orizzonti!</p>
+            </div>
+            
+        </main>
+    </div>
 
     <!-- JS -->
     <script src="js/script.js"></script>
